@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'clientes',
+    'django_adminlte',
 ]
 
 MIDDLEWARE = [
@@ -77,9 +78,9 @@ WSGI_APPLICATION = 'tw_clientes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tw_django_fundamentos',
+        'NAME': 'django_orm',
         'USER': 'root',
-        'PASSWORD': 'rootmysql',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '3306'
     }
