@@ -16,3 +16,6 @@ def editar_endereco(endereco_antigo, endereco_novo):
     endereco_antigo.cidade = endereco_novo.cidade
     endereco_antigo.pais = endereco_novo.pais
     endereco_antigo.save(force_update=True)
+
+def remover_endereco(endereco):
+    endereco.delete()

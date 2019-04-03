@@ -77,7 +77,9 @@ def editar_cliente(request, id):
 
 def remover_cliente(request, id):
     cliente = cliente_service.listar_cliente_id(id)
+    endereco = endereco_service.listar_endereco_id(cliente.endereco.id)
     if request.method == "POST":
         cliente_service.remover_cliente(cliente)
+        endereco_service.remover_endereco(endereco)
         return redirect('listar_clientes')
     return render(request, 'clientes/confirma_exclusao.html', {'cliente': cliente})
