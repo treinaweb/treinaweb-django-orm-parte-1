@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 
 from .models import Cliente
-from .forms import ClienteForm
+from .forms import ClienteForm, EnderecoForm
 from .entidades import cliente
 from .services import cliente_service
 
@@ -17,20 +17,21 @@ def listar_clientes(request):
 # Desativando a proteção CSRF
 def inserir_cliente(request):
     if request.method == "POST":
-        form = ClienteForm(request.POST)
-        if form.is_valid():
-            nome = form.cleaned_data["nome"]
-            sexo = form.cleaned_data["sexo"]
-            data_nascimento = form.cleaned_data["data_nascimento"]
-            email = form.cleaned_data["email"]
-            profissao = form.cleaned_data["profissao"]
+        form_cliente = ClienteForm(request.POST)
+        if form_cliente.is_valid():
+            nome = form_cliente.cleaned_data["nome"]
+            sexo = form_cliente.cleaned_data["sexo"]
+            data_nascimento = form_cliente.cleaned_data["data_nascimento"]
+            email = form_cliente.cleaned_data["email"]
+            profissao = form_cliente.cleaned_data["profissao"]
             cliente_novo = cliente.Cliente(nome=nome, sexo=sexo, data_nascimento=data_nascimento, email=email,
                                            profissao=profissao)
             cliente_service.cadastrar_cliente(cliente_novo)
             return redirect('listar_clientes')
     else:
-        form = ClienteForm()
-    return render(request, 'clientes/form_cliente.html', {'form': form})
+        form_cliente = ClienteForm()
+        form_endereco = EnderecoForm()
+    return render(request, 'clientes/form_cliente.html', {'form_cliente': form_cliente, 'form_endereco': form_endereco})
 
 def listar_cliente_id(request, id):
     cliente = cliente_service.listar_cliente_id(id)
