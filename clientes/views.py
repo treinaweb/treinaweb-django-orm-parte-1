@@ -4,8 +4,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .models import Cliente
 from .forms import ClienteForm, EnderecoForm
-from .entidades import cliente
-from .services import cliente_service
+from .entidades import cliente, endereco
+from .services import cliente_service, endereco_service
 
 # Create your views here.
 
@@ -18,16 +18,27 @@ def listar_clientes(request):
 def inserir_cliente(request):
     if request.method == "POST":
         form_cliente = ClienteForm(request.POST)
+        form_endereco = EnderecoForm(request.POST)
         if form_cliente.is_valid():
             nome = form_cliente.cleaned_data["nome"]
             sexo = form_cliente.cleaned_data["sexo"]
             data_nascimento = form_cliente.cleaned_data["data_nascimento"]
             email = form_cliente.cleaned_data["email"]
             profissao = form_cliente.cleaned_data["profissao"]
-            cliente_novo = cliente.Cliente(nome=nome, sexo=sexo, data_nascimento=data_nascimento, email=email,
-                                           profissao=profissao)
-            cliente_service.cadastrar_cliente(cliente_novo)
-            return redirect('listar_clientes')
+            if form_endereco.is_valid():
+                rua = form_endereco.cleaned_data["rua"]
+                numero = form_endereco.cleaned_data["numero"]
+                complemento = form_endereco.cleaned_data["complemento"]
+                bairro = form_endereco.cleaned_data["bairro"]
+                cidade = form_endereco.cleaned_data["cidade"]
+                pais = form_endereco.cleaned_data["pais"]
+                endereco_novo = endereco.Endereco(rua=rua, numero=numero, complemento=complemento, bairro=bairro,
+                                                  cidade=cidade, pais=pais)
+                endereco_bd = endereco_service.cadastrar_endereco(endereco_novo)
+                cliente_novo = cliente.Cliente(nome=nome, sexo=sexo, data_nascimento=data_nascimento, email=email,
+                                               profissao=profissao, endereco=endereco_bd)
+                cliente_service.cadastrar_cliente(cliente_novo)
+                return redirect('listar_clientes')
     else:
         form_cliente = ClienteForm()
         form_endereco = EnderecoForm()
