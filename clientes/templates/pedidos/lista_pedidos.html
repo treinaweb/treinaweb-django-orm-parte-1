@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Listagem de pedidos
+{% endblock title %}
+
+{% block content %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Data do pedido</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in pedidos %}
+            <tr>
+                <td><a href="#">{{i.cliente.nome}}</a></td>
+                <td>{{i.data_pedido | date:"d M Y"}}</td>
+                <td>{{i.status}}</td>
+                <td>
+                    <a href="#">Editar</a>
+                    <a href="#">Remover</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{% url 'cadastrar_pedido' %}"><button class="btn btn-primary">Cadastrar</button></a>
+{% endblock content %}

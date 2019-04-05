@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from ..forms import pedido_forms
 from ..entidades import pedido
 from ..services import pedido_service
@@ -15,6 +15,11 @@ def inserir_pedido(request):
             pedido_novo = pedido.Pedido(cliente=cliente, observacoes=observacoes, valor=valor, status=status,
                                         data_pedido=data_pedido)
             pedido_service.cadastrar_pedido(pedido_novo)
+            return redirect('listar_pedidos')
     else:
         form_pedido = pedido_forms.PedidoForm()
     return render(request, 'pedidos/form_pedido.html', {'form_pedido': form_pedido})
+
+def listar_pedidos(request):
+    pedidos = pedido_service.listar_pedidos()
+    return render(request, 'pedidos/lista_pedidos.html', {'pedidos': pedidos})
