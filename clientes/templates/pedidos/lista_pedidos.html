@@ -17,12 +17,11 @@ Listagem de pedidos
         <tbody>
             {% for i in pedidos %}
             <tr>
-                <td><a href="#">{{i.cliente.nome}}</a></td>
+                <td><a href="{% url 'listar_pedido_id' i.id %}">{{i.cliente.nome}}</a></td>
                 <td>{{i.data_pedido | date:"d M Y"}}</td>
                 <td>{{i.status}}</td>
                 <td>
-                    <a href="#">Editar</a>
-                    <a href="#">Remover</a>
+                    <a href="{% url 'editar_pedido' i.id %}">Editar</a>
                 </td>
             </tr>
             {% endfor %}
