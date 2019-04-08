@@ -1,4 +1,12 @@
 from ..models import Produto
 
+def listar_produtos():
+    produtos = Produto.objects.all()
+    return produtos
+
+def listar_produto_id(id):
+    produto = Produto.objects.get(id=id)
+    return produto
+
 def inserir_produto(produto):
     Produto.objects.create(nome=produto.nome, descricao=produto.descricao, valor=produto.valor)

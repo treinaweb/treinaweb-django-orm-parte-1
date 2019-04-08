@@ -1,8 +1,13 @@
 from ..models import Pedido
+from .produto_service import *
 
 def cadastrar_pedido(pedido):
-    Pedido.objects.create(cliente=pedido.cliente, data_pedido=pedido.data_pedido, valor=pedido.valor,
+    pedido_bd = Pedido.objects.create(cliente=pedido.cliente, data_pedido=pedido.data_pedido, valor=pedido.valor,
                           status=pedido.status, observacoes=pedido.observacoes)
+    pedido_bd.save()
+    for i in pedido.produtos:
+        produto = listar_produto_id(i.id)
+        pedido_bd.produtos.add(produto)
 
 
 def listar_pedidos():

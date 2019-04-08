@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1322da16-a2b8-4663-949c-5db2ca3f2bba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientes/entidades/produto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientes/services/produto_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientes/templates/produtos/lista_produtos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/entidades/pedido.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/entidades/pedido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/forms/pedido_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/forms/pedido_forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/services/pedido_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/services/pedido_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/services/produto_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/services/produto_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/templates/adminlte/lib/_main_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/templates/adminlte/lib/_main_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/templates/pedidos/form_pedido.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/templates/pedidos/form_pedido.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes/views/pedido_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/views/pedido_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientes/views/produto_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/views/produto_views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clientes/views/produto_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -28,19 +35,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientes/entidades/produto.py">
+        <entry file="file://$PROJECT_DIR$/clientes/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            <state relative-caret-position="289">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientes/services/produto_service.py">
+        <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/lista_pedidos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="94" selection-start-line="3" selection-start-column="89" selection-end-line="3" selection-end-column="94" />
+            <state relative-caret-position="289">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientes/templates/adminlte/lib/_main_sidebar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -48,17 +67,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clientes/views/pedido_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="238">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientes/forms/pedido_forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/form_pedido.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientes/entidades/pedido.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clientes/services/pedido_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="136">
+              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientes/services/produto_service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -68,8 +129,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,25 +153,26 @@
         <option value="$PROJECT_DIR$/clientes/forms.py" />
         <option value="$PROJECT_DIR$/clientes/forms/endereco_forms.py" />
         <option value="$PROJECT_DIR$/clientes/views/cliente_views.py" />
-        <option value="$PROJECT_DIR$/clientes/forms/pedido_forms.py" />
-        <option value="$PROJECT_DIR$/clientes/templates/pedidos/form_pedido.html" />
         <option value="$PROJECT_DIR$/clientes/templates/clientes/confirma_exclusao.html" />
         <option value="$PROJECT_DIR$/clientes/templates/clientes/form_cliente.html" />
         <option value="$PROJECT_DIR$/clientes/templates/clientes/lista_cliente.html" />
         <option value="$PROJECT_DIR$/clientes/templates/clientes/lista_clientes.html" />
-        <option value="$PROJECT_DIR$/clientes/entidades/pedido.py" />
-        <option value="$PROJECT_DIR$/clientes/templates/adminlte/lib/_main_sidebar.html" />
         <option value="$PROJECT_DIR$/clientes/templates/pedidos/lista_pedidos.html" />
         <option value="$PROJECT_DIR$/clientes/templates/pedidos/lista_pedido.html" />
-        <option value="$PROJECT_DIR$/clientes/views/pedido_views.py" />
-        <option value="$PROJECT_DIR$/clientes/services/pedido_service.py" />
         <option value="$PROJECT_DIR$/clientes/models.py" />
         <option value="$PROJECT_DIR$/clientes/forms/produto_forms.py" />
-        <option value="$PROJECT_DIR$/clientes/urls.py" />
         <option value="$PROJECT_DIR$/clientes/templates/produtos/form_produto.html" />
         <option value="$PROJECT_DIR$/clientes/entidades/produto.py" />
-        <option value="$PROJECT_DIR$/clientes/services/produto_service.py" />
         <option value="$PROJECT_DIR$/clientes/views/produto_views.py" />
+        <option value="$PROJECT_DIR$/clientes/urls.py" />
+        <option value="$PROJECT_DIR$/clientes/templates/produtos/lista_produtos.html" />
+        <option value="$PROJECT_DIR$/clientes/templates/adminlte/lib/_main_sidebar.html" />
+        <option value="$PROJECT_DIR$/clientes/forms/pedido_forms.py" />
+        <option value="$PROJECT_DIR$/clientes/templates/pedidos/form_pedido.html" />
+        <option value="$PROJECT_DIR$/clientes/entidades/pedido.py" />
+        <option value="$PROJECT_DIR$/clientes/views/pedido_views.py" />
+        <option value="$PROJECT_DIR$/clientes/services/produto_service.py" />
+        <option value="$PROJECT_DIR$/clientes/services/pedido_service.py" />
       </list>
     </option>
   </component>
@@ -193,6 +255,13 @@
               <item name="treinaweb-django-orm-parte-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="treinaweb-django-orm-parte-1" type="462c0819:PsiDirectoryNode" />
               <item name="clientes" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="produtos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="treinaweb-django-orm-parte-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="treinaweb-django-orm-parte-1" type="462c0819:PsiDirectoryNode" />
+              <item name="clientes" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,7 +331,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -378,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/entidades/pedido.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clientes/views/cliente_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -392,13 +454,6 @@
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/lista_pedido.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -412,34 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/templates/adminlte/lib/_main_sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/lista_pedidos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clientes/templates/clientes/lista_clientes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/forms/pedido_forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,27 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clientes/templates/produtos/form_produto.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/form_pedido.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -494,20 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/views/pedido_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/services/pedido_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clientes/entidades/produto.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -515,19 +515,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientes/services/produto_service.py">
+    <entry file="file://$PROJECT_DIR$/clientes/templates/produtos/lista_produtos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="94" selection-start-line="3" selection-start-column="89" selection-end-line="3" selection-end-column="94" />
+        <state relative-caret-position="374">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/lista_pedido.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/lista_pedidos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clientes/views/produto_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/templates/adminlte/lib/_main_sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/forms/pedido_forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/templates/pedidos/form_pedido.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/entidades/pedido.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/views/pedido_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/services/produto_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientes/services/pedido_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>

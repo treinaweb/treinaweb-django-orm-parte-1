@@ -4,6 +4,10 @@ from ..services import produto_service
 
 from django.shortcuts import render
 
+def listar_produtos(request):
+    produtos = produto_service.listar_produtos()
+    return render(request, 'produtos/lista_produtos.html', {'produtos': produtos})
+
 def inserir_produto(request):
     if request.method == "POST":
         form_produto = ProdutoForm(request.POST)
