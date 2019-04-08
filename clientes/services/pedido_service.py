@@ -20,6 +20,7 @@ def editar_pedido(pedido, pedido_novo):
     pedido.data_pedido = pedido_novo.data_pedido
     pedido.valor = pedido_novo.valor
     pedido.status = pedido_novo.status
+    pedido.produtos.set(pedido_novo.produtos)
     pedido.save(force_update=True)
 
 def listar_pedido_id(id):

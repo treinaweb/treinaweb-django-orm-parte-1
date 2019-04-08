@@ -38,8 +38,9 @@ def editar_pedido(request, id):
         data_pedido = form_pedido.cleaned_data["data_pedido"]
         valor = form_pedido.cleaned_data["valor"]
         status = form_pedido.cleaned_data["status"]
+        produtos = form_pedido.cleaned_data["produtos"]
         pedido_novo = pedido.Pedido(cliente=cliente, observacoes=observacoes, data_pedido=data_pedido, valor=valor,
-                                    status=status)
+                                    status=status, produtos=produtos)
         pedido_service.editar_pedido(pedido_antigo, pedido_novo)
         return redirect('listar_pedidos')
     return render(request, 'pedidos/form_pedido.html', {'form_pedido': form_pedido})
