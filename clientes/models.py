@@ -14,6 +14,14 @@ class Endereco(models.Model):
     def __str__(self):
         return self.rua
 
+class Produto(models.Model):
+    nome = models.CharField(max_length=50, null=False, blank=False)
+    descricao = models.CharField(max_length=100, null=False, blank=False)
+    valor = models.FloatField(null=False, blank=False)
+
+    def __str__(self):
+        return self.nome
+
 class Pedido(models.Model):
     STATUS_CHOICES = (
         ("P", "Pedido realizado"),
@@ -25,6 +33,7 @@ class Pedido(models.Model):
     valor = models.FloatField(blank=False, null=False)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES, blank=False, null=False)
     observacoes = models.CharField(max_length=50, null=True, blank=True)
+    produtos = models.ManyToManyField(Produto)
 
     def __str__(self):
         return self.cliente.nome
