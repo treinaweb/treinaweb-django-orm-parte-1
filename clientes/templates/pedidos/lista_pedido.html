@@ -16,6 +16,12 @@ Listagem de Pedido
         <h5 class="card-title">Valor: {{pedido.valor}}</h5>
         <h5 class="card-title">Status: {{pedido.status}}</h5>
     </div>
+
+    <hr>
+    <h4>Produtos do pedido: </h4>
+    {% for i in pedido.produtos.all %}
+    <h5>{{i.nome}}</h5>
+    {% endfor %}
 </div>
 
 {% endblock content %}

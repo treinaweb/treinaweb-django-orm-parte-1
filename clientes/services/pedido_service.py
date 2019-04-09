@@ -14,10 +14,11 @@ def cadastrar_pedido(pedido):
 def listar_pedidos():
     #pedidos = Pedido.objects.all()
     pedidos = Pedido.objects.select_related('cliente').all()
-    for i in pedidos:
-        print(i.cliente.nome)
-    print(connection.queries)
-    print(len(connection.queries))
+    #pedidos = Pedido.objects.prefetch_related('produtos').all()
+    # for i in pedidos:
+    #     print(i.produtos.all())
+    # print(connection.queries)
+    # print(len(connection.queries))
     return pedidos
 
 def editar_pedido(pedido, pedido_novo):
@@ -31,4 +32,8 @@ def editar_pedido(pedido, pedido_novo):
 
 def listar_pedido_id(id):
     pedido = Pedido.objects.get(id=id)
+    for i in pedido.produtos.all():
+        print(i.nome)
+    print(connection.queries)
+    print(len(connection.queries))
     return pedido
