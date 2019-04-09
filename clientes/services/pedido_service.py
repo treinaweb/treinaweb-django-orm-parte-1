@@ -1,5 +1,6 @@
 from ..models import Pedido
 from .produto_service import *
+from django.db import connection
 
 def cadastrar_pedido(pedido):
     pedido_bd = Pedido.objects.create(cliente=pedido.cliente, data_pedido=pedido.data_pedido, valor=pedido.valor,
@@ -11,7 +12,12 @@ def cadastrar_pedido(pedido):
 
 
 def listar_pedidos():
-    pedidos = Pedido.objects.all()
+    #pedidos = Pedido.objects.all()
+    pedidos = Pedido.objects.select_related('cliente').all()
+    for i in pedidos:
+        print(i.cliente.nome)
+    print(connection.queries)
+    print(len(connection.queries))
     return pedidos
 
 def editar_pedido(pedido, pedido_novo):
