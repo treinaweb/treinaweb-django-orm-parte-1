@@ -11,7 +11,7 @@ Repositório com o código produzido durante o curso "Django - ORM - Parte 1".
 #### Lista de commits
 Aula | Video | Commit | Link 
 ------ | ------ | ------ | ------ 
-Aula 03| | Codigo-fonte base | [Download](https://github.com/treinaweb/treinaweb-django-orm-parte-1/archive/8df77e10c4815e75f26f983a73403c81c17ff809.zip) 
+Aula 03| Codigo-fonte base | Codigo-fonte base | [Download](https://github.com/treinaweb/treinaweb-django-orm-parte-1/archive/8df77e10c4815e75f26f983a73403c81c17ff809.zip) 
 Aula 03| Configurando AdminLTE na Aplicacao | 03.02_Configurando_AdminLTE_Aplicacao | [Download](https://github.com/treinaweb/treinaweb-django-orm-parte-1/archive/36109fe7b6e30768c50ba45a5ee504a0ccdec865.zip) 
 Aula 03| Criando Menu de Navegacao | 03.03_Criando_Menu_Navegacao | [Download](https://github.com/treinaweb/treinaweb-django-orm-parte-1/archive/ab7fc653785ebcf4e2307e420fc00bc3df3376fc.zip) 
 Aula 04| Criando Model Endereco | 04.02_Criando_Model_Endereco | [Download](https://github.com/treinaweb/treinaweb-django-orm-parte-1/archive/86dddc1be20ff092bb5311e56c54bf3c515be3f5.zip) 
