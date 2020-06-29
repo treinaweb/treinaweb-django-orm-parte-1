@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/fagnerpsantos/Developer/Treinaweb/Django/treinaweb-django-orm-parte-1/venv"
+set -gx VIRTUAL_ENV "/Users/fagnerpsantos/Desktop/treinaweb-django-orm-parte-1/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

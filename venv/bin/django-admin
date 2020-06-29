@@ -1,5 +1,4 @@
-#!/Users/fagnerpsantos/Developer/Treinaweb/Django/treinaweb-django-orm-parte-1/venv/bin/python
-
+#!/Users/fagnerpsantos/Desktop/treinaweb-django-orm-parte-1/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
